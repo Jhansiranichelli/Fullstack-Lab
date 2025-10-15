@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CSS Types</title>
-    
-    <!-- Internal CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Styles Example - Combined</title>
+
+    <!-- Simulated External CSS -->
     <style>
-        /* Selector: h1 | Property: color | Value: green */
-        h1 {
-            color: green;
+        /* External CSS (normally this is in a separate file) */
+        body {
+            background-color: #f0f8ff;
+            font-family: Verdana, sans-serif;
         }
 
-        /* Class selector */
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
-
-        /* ID selector */
-        #main-content {
-            border: 2px solid blue;
-            padding: 10px;
+        h2 {
+            color: darkgreen;
         }
     </style>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS -->
+    <style>
+        p.internal-style {
+            color: purple;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Inline CSS -->
-    <h1 style="color: red;">Welcome to CSS Example</h1>
+<h2>Heading Styled by External CSS</h2>
 
-    <div id="main-content">
-        <p>This content is inside a div styled with an ID selector.</p>
-        <p class="highlight">This paragraph uses a class selector.</p>
-    </div>
+<p class="internal-style">This paragraph is styled using Internal CSS.</p>
+
+<p style="color: red; font-weight: bold;">
+    This paragraph is styled using Inline CSS (red and bold).
+</p>
 
 </body>
 </html>
